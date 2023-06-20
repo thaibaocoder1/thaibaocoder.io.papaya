@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+img {
+  display: block;
+}
+main {
+  background-image: linear-gradient(
+    180deg,
+    #2b2f53 0%,
+    #1d1c34 35.79%,
+    #1d1c34 42.06%
+  );
+  min-height: 100vh;
+}

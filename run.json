@@ -1,0 +1,4 @@
+{
+  "first": "sass ./assets/sass/main.scss ./assets/css/styles.css --watch",
+  "second": "sass ./assets/sass/reset.scss ./assets/css/reset.css --watch"
+}

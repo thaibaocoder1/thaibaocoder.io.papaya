@@ -1,0 +1,98 @@
+.sidebar {
+  width: 15%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1;
+  background-image: linear-gradient(168.44deg, #2e335a 1.62%, #1c1b33 95.72%);
+  &-inner {
+    padding: 3.6rem 0;
+  }
+  &-wrapper {
+    display: flex;
+    align-items: center;
+    padding: 1.5rem 0;
+    margin-left: 2.4rem;
+  }
+  &-icon {
+    width: 2.4rem;
+    height: 2.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $label-dark-color;
+    cursor: pointer;
+    margin-right: 1.6rem;
+  }
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2.4rem;
+    &-item {
+      display: flex;
+      align-items: center;
+      gap: 0 2rem;
+      padding: 1.2rem 0;
+      transition: all 0.3s linear;
+      position: relative;
+      cursor: pointer;
+      &::after {
+        content: "";
+        width: 100%;
+        height: 1px;
+        background: linear-gradient(
+          270deg,
+          rgba(255, 255, 255, 0) 0%,
+          rgba(255, 255, 255, 0.2995) 50.4%,
+          rgba(255, 255, 255, 0) 96.77%
+        );
+        background-blend-mode: overlay;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+      }
+      &:hover .navbar-icon {
+        border: 1px solid;
+        border-image-slice: 1;
+        border-image-source: linear-gradient(to right bottom, #6a5af9, #f62682);
+      }
+      &:hover .navbar-icon.navbar-icon--thumb {
+        border: none;
+      }
+      &:hover {
+        background: radial-gradient(
+          50% 128.57% at 50% -36.61%,
+          #8015a7 0%,
+          rgba(97, 54, 144, 0) 100%
+        );
+      }
+    }
+    &-link {
+      display: block;
+      font-weight: 500;
+      font-size: 1.7rem;
+      line-height: 1.4;
+      color: #ffffff;
+    }
+    &-icon {
+      width: 3.2rem;
+      height: 3.2rem;
+      border-radius: 50%;
+      color: #ffffff;
+      padding: 2rem;
+      background-color: transparent;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      transition: all 0.3s linear;
+    }
+  }
+  &-title {
+    font-weight: 600;
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 0.5);
+    margin: 2rem 0 1.2rem 1.6rem;
+  }
+}
